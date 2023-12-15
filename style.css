@@ -1,0 +1,160 @@
+
+body {
+  padding:0;
+  margin:0;
+  background-image: url('https://t3.ftcdn.net/jpg/05/79/86/10/360_F_579861052_KjeAAbyaXOBY6JjxMEPBVJypp2KSb59v.jpg'); /* Replace 'your-image-path.jpg' with the path to your image */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  color: #fffdfd; 
+  font-family: Arial, sans-serif;
+}
+
+
+.cloud {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.cloud1 {
+  top: 20%;
+  left: 10%;
+}
+
+.cloud2 {
+  top: 40%;
+  left: 40%;
+}
+
+.cloud3 {
+  top: 60%;
+  right: 20%;
+}
+
+.cloud4 {
+  top: 80%;
+  left: 70%;
+}
+
+
+
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input[type="text"],
+.search button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #f8eded;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search button {
+  background-color: #003a61; 
+  color: #fff; 
+  cursor: pointer;
+}
+.weather {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather .details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.weather .col {
+  flex: 0 0 48%;
+  margin-bottom: 10px;
+}
+
+
+.weather table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.weather th,
+.weather td {
+  padding: 8px;
+  border: 1px solid #834242;
+}
+
+.weather th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .search input[type="text"],
+  .search button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .weather .col {
+    flex: 0 0 100%;
+  }
+}
+.details img {
+  width: 45px;
+  height: 45px;
+}
+
+.temp {
+  font-size: 3em;
+  text-shadow: 0 0 10px #003c00;
+}
+
+.city {
+  font-size: 2em;
+  text-shadow: 0 0 10px #1c081c;
+}
+
+.humidity,
+.wind,
+.precipitation-value,
+.air-quality-value {
+  font-size: 1.2em;
+  text-shadow: 0 0 10px hsl(180, 96%, 9%);
+}
+
+.search button {
+  background-color: #042134;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #003a61;
+}
